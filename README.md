@@ -4,11 +4,11 @@ Downloads long-read (PacBio HiFi, Oxford Nanopore) and short-read (Hi-C) data fi
 
 ## Installation
 
-To install the latest version on Pawsey:
+To install the latest stable version on Pawsey:
 
 ```
 module load nextflow/25.04.6
-nextflow pull amytims/atol-bpa-download -r dev
+nextflow pull amytims/atol-bpa-download -r 0.2.1
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ In this case, we'd be downloading pacbio and hic data files:
 
 ```
 nextflow run amytims/atol-bpa-download \
-    -r dev \
+    -r 0.2.1 \
     --yaml <PATH/TO/CONFIG.YAML> \
     --outdir <OUTPUT_DIRECTORY> \
     --bpa_api_token ${CKAN_API_TOKEN} \
